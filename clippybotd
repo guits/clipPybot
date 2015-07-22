@@ -1,0 +1,9 @@
+#!/usr/bin/python
+
+from clippybot.clippybotd import *
+from clippybot.config import *
+
+if __name__ == "__main__":
+    config = Config('config.yaml').load()
+    print config
+    ClipPybot(config=config).start()
